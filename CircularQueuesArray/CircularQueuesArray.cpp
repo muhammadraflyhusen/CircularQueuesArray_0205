@@ -48,5 +48,10 @@ public:
 			return;
 		}
 		cout << "\nThe element deleted from the queue is: " << queue_array[FRONT] << "\n";
+
+		if (FRONT == REAR) {
+			FRONT = -1;
+			REAR = -1;
+		}
 	}
 };
